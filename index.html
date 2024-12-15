@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta>
+        <meta charset="utf-8">
+        <title>Fraps</title>
+        <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+        <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    
+    </head>
+    <body>
+        <a-scene>
+            <a-entity id="rig" movement-controls kinematic-body>
+         
+      
+              <a-cursor></a-cursor>
+
+              <a-entity id="camera" camera position="0 1.6 0" look-controls>
+                <a-cursor 
+                color="#FFFFFF" 
+                opacity="0.5" 
+                geometry="primitive: ring; 
+                          radiusInner: 0.02; 
+                          radiusOuter: 0.03"
+            ></a-cursor>
+              </a-entity>
+            </a-entity>
+            <a-plane static-body src="white" position="0 -1 -6" rotation="-90 0 0" width="100" height='100' color="">
+            </a-plane>
+            <a-plane src="black" static-body position="0 0 43" rotation="-0 180 0" width="100" height='20'
+              color="">
+            </a-plane>
+            </a-plane>
+            <a-plane static-body src="b"  position="-50 0 -6" rotation="-0 90 0" width="100" height='20'
+              color="">
+            </a-plane>
+            <a-plane static-body src="b" position="50 0 -6" rotation="-0 -90 0" width="100" height='20'
+              color="">
+            </a-plane>
+            <a-plane static-body src="blacka" position="0 0 -50" rotation="0 0 0" width="100" height='20' color="">
+            </a-plane>
+            <!-- <a-cylinder static-body width="20" radius="3" height="5"></a-cylinder> -->
+        
+        
+        
+            <a-sky color="#ECECEC"></a-ssssssy>
+          </a-scene>        <script src="script.js"></script>
+    </body>
+</html>
